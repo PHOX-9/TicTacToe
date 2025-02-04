@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d778213d58.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+<div class="container">
+    <div class="column1 active-con" id="usercon">
+        <div class="player">
+            <p id="p1">Player 1</p>
+            <i id="p1i" class="fa-solid fa-user"></i>
+        </div>
+        <div class="diffbutt">
+            <button id="easy" class="difficulty active-diff" onclick="setDifficulty('easy')">Easy</button>
+            <button id="hard" class="difficulty" onclick="setDifficulty('hard')">Hard</button>    
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="viccon">
+            <div class="victory">
+                <i class="fa-solid fa-xmark" id="x" onclick="show()"></i>
+                <i id="icon" class="fa-solid fa-crown"></i>
+                <p id="vm">Victory Message</p>
+                <button id="btn">Play Again</button>
+            </div>
+        </div>
+        <div class="heading">
+            <h2>Tic Tac Toe</h2>
+        </div>
+        <div class="options">
+            <h3 class="mode active-mode" id="player" onclick="gameModeSelect('player')">Play with a Friend <i class="fa-solid fa-user"></i></h3>
+            <h3 class="mode" id="robot" onclick="gameModeSelect('robot')">Play with Robot <i class="fa-solid fa-robot"></i></h3>
+        </div>
+        <div class="table-con">
+            <table>
+                <tr>
+                    <td id="b1" onclick="game('b1')"></td>
+                    <td id="b2" onclick="game('b2')"></td>
+                    <td id="b3" onclick="game('b3')"></td>
+                </tr>
+                <tr>
+                    <td id="b4" onclick="game('b4')"></td>
+                    <td id="b5" onclick="game('b5')"></td>
+                    <td id="b6" onclick="game('b6')"></td>
+                </tr>
+                <tr>
+                    <td id="b7" onclick="game('b7')"></td>
+                    <td id="b8" onclick="game('b8')"></td>
+                    <td id="b9" onclick="game('b9')"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="column3" id="usercon">
+        <p id="p2">Player 2</p>
+        <i id="p2i" class="fa-solid fa-user"></i>
+    </div>
+</div>
+
+    <audio id="gameover" src="Audios/game over.wav"></audio>
+    <audio id="movex" src="Audios/movex.mp3"></audio>
+    <audio id="moveo" src="Audios/moveo.mp3"></audio>
+    <audio id="victory" src="Audios/victory.mp3"></audio>
+    <audio id="change" src="Audios/change.mp3"></audio>
+    <audio id="clock"   src="Audios/tick-tock.wav"></audio>
+    <audio id="go"  src="Audios/GAME ON.wav"></audio>
+    <audio id="robolaugh" src="Audios/robolaugh.mp3"></audio>
+    <audio id="bg" src="Audios/Doom.mp3"></audio>
+</body>
+
+</html>
