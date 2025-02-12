@@ -1,6 +1,6 @@
 # Tic-Tac-Toe Game 🎮  
 
-A simple **Tic-Tac-Toe** game built using **HTML, CSS, and JavaScript**. Play against a friend in a classic 3x3 grid battle!  
+A simple **Tic-Tac-Toe** game built using **HTML, CSS, and JavaScript**. Play against a friend or a robot in a classic 3x3 grid battle!  
 
 ## ✨ Features  
 ✅ **Interactive UI** with a clean design  
